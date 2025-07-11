@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mini SIASAT"
+            android:text="SIASAT"
             android:textSize="36sp"
             android:textStyle="bold"
             android:textColor="@color/primary"
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sistem Informasi Akademik"
+            android:text="Sistem Informasi Akademik Satya Wacana"
             android:textSize="16sp"
             android:textColor="@color/text_secondary"
             android:gravity="center" />
@@ -136,15 +136,4 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <!-- Demo Info -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Demo: Kaprogdi 67003, Dosen 67506, Mahasiswa 672022708"
-        android:textSize="12sp"
-        android:textColor="@color/text_secondary"
-        android:gravity="center"
-        android:alpha="0.7" />
-
 </LinearLayout> 
