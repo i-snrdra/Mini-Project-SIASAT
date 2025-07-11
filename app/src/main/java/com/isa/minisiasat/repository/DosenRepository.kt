@@ -253,26 +253,6 @@ class DosenRepository {
         }
     }
     
-    // ========== ENROLLMENT (DUMMY DATA) ==========
-    suspend fun createDummyEnrollment() {
-        try {
-            // Dummy enrollment data - nanti bisa dihapus kalau ada sistem enrollment yang proper
-            val enrollments = listOf(
-                MatkulMahasiswa("", "TIF123", "672022708", "Isa Noorendra", "2022"),
-                MatkulMahasiswa("", "TIF123", "672022134", "Aghus Fajar M", "2022"),
-                MatkulMahasiswa("", "TIF123", "672022076", "Ardiva Nugraheni", "2022")
-            )
-            
-            for (enrollment in enrollments) {
-                val docRef = db.collection("matkul_mahasiswa").document()
-                val enrollmentWithId = enrollment.copy(id = docRef.id)
-                docRef.set(enrollmentWithId).await()
-            }
-        } catch (e: Exception) {
-            // Ignore if already exists
-        }
-    }
-    
     // ========== UTILITY FUNCTIONS ==========
     private fun getHariIni(): String {
         val calendar = Calendar.getInstance()

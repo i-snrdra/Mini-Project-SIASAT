@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Time Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginEnd="12dp"
+        android:minWidth="60dp">
+
+        <TextView
+            android:id="@+id/tvJamMulai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:00"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:background="@color/primary"
+            android:layout_marginVertical="2dp" />
+
+        <TextView
+            android:id="@+id/tvJamSelesai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary" />
+
+    </LinearLayout>
+
+    <!-- Content Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/tvKodeMatkul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIF123"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvSks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 SKS"
+                android:textSize="10sp"
+                android:textColor="@color/text_secondary"
+                android:background="@drawable/background_badge"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="1dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNamaMatkul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemrograman Mobile"
+            android:textSize="12sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tvDosen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. John Doe"
+            android:textSize="11sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tvRuang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lab 1"
+            android:textSize="11sp"
+            android:textColor="@color/accent"
+            android:drawableStart="@drawable/ic_room_24"
+            android:drawablePadding="4dp"
+            android:drawableTint="@color/accent"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+</LinearLayout> 

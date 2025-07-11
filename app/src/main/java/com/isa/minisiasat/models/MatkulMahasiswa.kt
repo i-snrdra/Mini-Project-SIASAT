@@ -6,5 +6,7 @@ data class MatkulMahasiswa(
     val mahasiswaId: String = "",
     val mahasiswaNama: String = "",
     val tahunMasuk: String = "",
+    val tanggalDaftar: String = "", // Tanggal pendaftaran
+    val status: String = "aktif", // aktif, dropout, lulus
     val enrolledAt: Long = System.currentTimeMillis()
 ) 

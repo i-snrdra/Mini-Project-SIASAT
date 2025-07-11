@@ -118,10 +118,7 @@ class DosenDashboardActivity : AppCompatActivity() {
                 val absensiAktif = dosenRepository.getAbsensiAktif(currentDosenId)
                 Log.d("DosenDashboard", "Loaded ${absensiAktif.size} absensi aktif")
                 updateAbsensiAktif(absensiAktif)
-                
-                // Create dummy enrollment untuk testing
-                dosenRepository.createDummyEnrollment()
-                
+        
             } catch (e: Exception) {
                 Log.e("DosenDashboard", "Error loading dashboard data", e)
                 Toast.makeText(this@DosenDashboardActivity, "Gagal memuat data", Toast.LENGTH_SHORT).show()

@@ -8,6 +8,7 @@
     <color name="primary_light">#E3F2FD</color>
     <color name="primary_variant">#1976D2</color>
     <color name="secondary">#FF9800</color>
+    <color name="secondary_light">#FFF3E0</color>
     
     <!-- Background Colors - Light and Clean -->
     <color name="background_light">#FAFAFA</color>

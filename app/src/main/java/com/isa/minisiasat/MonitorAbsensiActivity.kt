@@ -120,7 +120,6 @@ class MonitorAbsensiActivity : AppCompatActivity() {
         val jumlahHadir = session.mahasiswaHadir.size
         binding.tvJumlahHadir.text = jumlahHadir.toString()
         
-        // Get total mahasiswa terdaftar (dummy for now)
         lifecycleScope.launch {
             try {
                 val totalMahasiswa = dosenRepository.getMahasiswaByMatkul(matkulCode).size

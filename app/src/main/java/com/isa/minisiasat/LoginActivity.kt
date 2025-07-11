@@ -86,9 +86,7 @@ class LoginActivity : AppCompatActivity() {
                             finish()
                         }
                         "mahasiswa" -> {
-                            // TODO: Navigasi ke halaman mahasiswa
-                            showToast("Login sebagai Mahasiswa: ${user.nama}")
-                            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                            val intent = Intent(this@LoginActivity, MahasiswaDashboardActivity::class.java)
                             intent.putExtra("USER_ID", user.id)
                             intent.putExtra("USER_NAME", user.nama)
                             intent.putExtra("USER_ROLE", user.role)

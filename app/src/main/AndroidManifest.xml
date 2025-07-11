@@ -16,7 +16,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:label="Login"
+            android:label="Mini SIASAT"
             android:theme="@style/Theme.MiniSIASAT">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -102,6 +102,49 @@
             android:name=".DosenMatkulActivity"
             android:exported="false"
             android:label="Mata Kuliah Saya"
+            android:theme="@style/Theme.MiniSIASAT" />
+        
+        <!-- Mahasiswa Activities -->
+        <activity
+            android:name=".MahasiswaDashboardActivity"
+            android:exported="false"
+            android:label="Dashboard Mahasiswa"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".MahasiswaProfileActivity"
+            android:exported="false"
+            android:label="Profile Mahasiswa"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".MahasiswaMatkulActivity"
+            android:exported="false"
+            android:label="Mata Kuliah Saya"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".MahasiswaAbsensiActivity"
+            android:exported="false"
+            android:label="Absensi Mahasiswa"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".MahasiswaNilaiActivity"
+            android:exported="false"
+            android:label="Nilai Saya"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".MahasiswaJadwalActivity"
+            android:exported="false"
+            android:label="Jadwal Kuliah"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".MahasiswaEnrollmentActivity"
+            android:exported="false"
+            android:label="Registrasi Mata Kuliah"
             android:theme="@style/Theme.MiniSIASAT" />
     </application>
 
