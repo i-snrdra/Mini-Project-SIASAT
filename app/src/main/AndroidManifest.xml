@@ -30,6 +30,12 @@
             android:exported="true"
             android:label="Data Seeder"
             android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Login"
+            android:theme="@style/Theme.MiniSIASAT" />
     </application>
 
 </manifest>

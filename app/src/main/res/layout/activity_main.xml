@@ -68,7 +68,17 @@
                 android:layout_height="wrap_content"
                 android:text="Buka Data Seeder"
                 android:textSize="16sp"
-                android:padding="12dp" />
+                android:padding="12dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:backgroundTint="@color/accent" />
 
         </LinearLayout>
 

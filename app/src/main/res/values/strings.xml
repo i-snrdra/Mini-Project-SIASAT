@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Mini SIASAT</string>
+    <string name="app_subtitle">Sistem Informasi Akademik Sederhana</string>
+    <string name="welcome_message">Selamat Datang</string>
+    <string name="login_subtitle">Silahkan masuk untuk melanjutkan</string>
+    <string name="hint_user_id">ID Pengguna</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">MASUK</string>
+    <string name="btn_processing">MEMPROSES...</string>
+    <string name="btn_logout">Logout</string>
+    <string name="demo_accounts">Akun Demo:</string>
+    <string name="demo_accounts_detail">Kaprogdi: 67003 | Dosen: 67506 | Mahasiswa: 672022708</string>
+    <string name="setup_database">Setup Database</string>
+    <string name="setup_database_desc">Klik tombol di bawah untuk mengisi data awal ke Firestore</string>
+    <string name="open_seeder">Buka Data Seeder</string>
+    <string name="error_empty_user_id">ID Pengguna tidak boleh kosong</string>
+    <string name="error_empty_password">Password tidak boleh kosong</string>
+    <string name="error_invalid_credentials">ID Pengguna atau Password salah!</string>
+    <string name="error_network">Terjadi kesalahan jaringan</string>
+    <string name="welcome_user">Selamat datang, %s!</string>
+    <string name="login_as_kaprogdi">Login sebagai Kaprogdi: %s</string>
+    <string name="login_as_dosen">Login sebagai Dosen: %s</string>
+    <string name="login_as_mahasiswa">Login sebagai Mahasiswa: %s</string>
+    <string name="role_kaprogdi">Kepala Program Studi</string>
+    <string name="role_dosen">Dosen</string>
+    <string name="role_mahasiswa">Mahasiswa</string>
+    <string name="role_user">Pengguna</string>
 </resources>
