@@ -106,11 +106,11 @@ class LoginActivity : AppCompatActivity() {
         if (isLoading) {
             binding.progressBar.visibility = View.VISIBLE
             binding.btnLogin.isEnabled = false
-            binding.btnLogin.text = "MEMPROSES..."
+            binding.btnLogin.text = "Memproses..."
         } else {
             binding.progressBar.visibility = View.GONE
             binding.btnLogin.isEnabled = true
-            binding.btnLogin.text = "MASUK"
+            binding.btnLogin.text = "Masuk"
         }
     }
     

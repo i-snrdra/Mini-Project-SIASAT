@@ -18,14 +18,8 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun setupClickListeners() {
-        binding.btnOpenSeeder.setOnClickListener {
-            val intent = Intent(this, DataSeederActivity::class.java)
-            startActivity(intent)
-        }
-        
-        binding.btnLogin.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+        binding.btnLogout.setOnClickListener {
+            logout()
         }
     }
     
@@ -37,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         if (userId != null && userName != null && userRole != null) {
             // User sudah login, update UI
             updateUIForLoggedInUser(userName, userRole)
+        } else {
+            // Jika tidak ada data user, kembali ke login
+            logout()
         }
     }
     
@@ -53,17 +50,11 @@ class MainActivity : AppCompatActivity() {
         }
         
         binding.tvSubtitle.text = "$roleText: $userName"
-        
-        // Update button text
-        binding.btnLogin.text = "Logout"
-        binding.btnLogin.setOnClickListener {
-            logout()
-        }
     }
     
     private fun logout() {
-        // Restart MainActivity tanpa extras
-        val intent = Intent(this, MainActivity::class.java)
+        // Kembali ke LoginActivity dan clear task stack
+        val intent = Intent(this, LoginActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
         finish()
