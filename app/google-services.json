@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "966363825200",
+    "project_id": "mini-siasat-c681b",
+    "storage_bucket": "mini-siasat-c681b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966363825200:android:19ec4942a300c11d3a59f5",
+        "android_client_info": {
+          "package_name": "com.isa.minisiasat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsEaGYswlORctGy84uSLWos3oGes9G_pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
