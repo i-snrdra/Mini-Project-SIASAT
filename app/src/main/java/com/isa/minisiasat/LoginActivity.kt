@@ -8,17 +8,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.isa.minisiasat.databinding.ActivityLoginBinding
 import com.isa.minisiasat.utils.UserRepository
+import com.isa.minisiasat.utils.SessionManager
 import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private val userRepository = UserRepository()
+    private lateinit var sessionManager: SessionManager
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         
+        sessionManager = SessionManager(this)
         setupClickListeners()
     }
     
@@ -61,6 +64,9 @@ class LoginActivity : AppCompatActivity() {
                     showLoading(false)
                     showToast("Selamat datang, ${user.nama}!")
                     
+                    // Simpan session
+                    sessionManager.createSession(user.id, user.nama, user.role)
+                    
                     // Navigasi ke halaman yang sesuai berdasarkan role
                     when (user.role) {
                         "kaprogdi" -> {
@@ -72,9 +78,7 @@ class LoginActivity : AppCompatActivity() {
                             finish()
                         }
                         "dosen" -> {
-                            // TODO: Navigasi ke halaman dosen
-                            showToast("Login sebagai Dosen: ${user.nama}")
-                            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                            val intent = Intent(this@LoginActivity, DosenDashboardActivity::class.java)
                             intent.putExtra("USER_ID", user.id)
                             intent.putExtra("USER_NAME", user.nama)
                             intent.putExtra("USER_ROLE", user.role)

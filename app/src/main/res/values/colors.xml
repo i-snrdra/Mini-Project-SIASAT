@@ -12,6 +12,7 @@
     <!-- Background Colors - Light and Clean -->
     <color name="background_light">#FAFAFA</color>
     <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F5F5F5</color>
     
     <!-- Text Colors - High Contrast for Readability -->
     <color name="text_primary">#212121</color>

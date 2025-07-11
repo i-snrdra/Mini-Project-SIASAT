@@ -60,6 +60,49 @@
             android:exported="false"
             android:label="Edit Mata Kuliah"
             android:theme="@style/Theme.MiniSIASAT" />
+            
+        <!-- Dosen Activities -->
+        <activity
+            android:name=".DosenDashboardActivity"
+            android:exported="false"
+            android:label="Dashboard Dosen"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".DosenAbsensiActivity"
+            android:exported="false"
+            android:label="Absensi"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".MonitorAbsensiActivity"
+            android:exported="false"
+            android:label="Monitor Absensi"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".DosenNilaiActivity"
+            android:exported="false"
+            android:label="Input Nilai"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".DosenProfileActivity"
+            android:exported="false"
+            android:label="Profile Dosen"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".DosenHistoryAbsensiActivity"
+            android:exported="false"
+            android:label="History Absensi"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".DosenMatkulActivity"
+            android:exported="false"
+            android:label="Mata Kuliah Saya"
+            android:theme="@style/Theme.MiniSIASAT" />
     </application>
 
 </manifest>

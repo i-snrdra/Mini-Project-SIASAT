@@ -9,6 +9,8 @@ data class Matkul(
     val jamSelesai: String = "",
     val kapasitas: Int = 0,
     val sks: Int = 0,
+    val semester: Int = 1,
+    val ruang: String = "",
     val dosenId: String? = null,
     val dosenNama: String? = null,
     val createdAt: Long = System.currentTimeMillis()
