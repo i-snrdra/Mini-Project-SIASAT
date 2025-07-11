@@ -30,6 +30,36 @@
             android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/Theme.MiniSIASAT" />
+        
+        <activity
+            android:name=".KaprogdiDashboardActivity"
+            android:exported="false"
+            android:label="Dashboard Kaprogdi"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".TambahMatkulActivity"
+            android:exported="false"
+            android:label="Tambah Mata Kuliah"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".AssignDosenActivity"
+            android:exported="false"
+            android:label="Assign Dosen"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".LihatMatkulActivity"
+            android:exported="false"
+            android:label="Lihat Mata Kuliah"
+            android:theme="@style/Theme.MiniSIASAT" />
+            
+        <activity
+            android:name=".EditMatkulActivity"
+            android:exported="false"
+            android:label="Edit Mata Kuliah"
+            android:theme="@style/Theme.MiniSIASAT" />
     </application>
 
 </manifest>

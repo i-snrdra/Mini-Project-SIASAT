@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header dengan kode dan nama -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_kode_matkul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIF123"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:background="@drawable/badge_background"
+                android:padding="4dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tv_nama_matkul"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pemrograman Web"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+        </LinearLayout>
+
+        <!-- Detail mata kuliah -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_jadwal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Senin, 08:00-10:00"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary" />
+
+            <TextView
+                android:id="@+id/tv_sks_kapasitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 SKS • 40 mhs"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary" />
+
+        </LinearLayout>
+
+        <!-- Status dosen -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dosen Pengampu:"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tv_dosen_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum ada dosen"
+                android:textSize="14sp"
+                android:textColor="@color/warning"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_assign"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="Assign Dosen"
+                android:textSize="14sp"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/white"
+                app:cornerRadius="6dp" />
+
+            <Button
+                android:id="@+id/btn_reassign"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:text="Ganti Dosen"
+                android:textSize="14sp"
+                android:backgroundTint="@color/secondary"
+                android:textColor="@color/white"
+                app:cornerRadius="6dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_unassign"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="Lepas Dosen"
+                android:textSize="14sp"
+                android:backgroundTint="@color/error"
+                android:textColor="@color/white"
+                app:cornerRadius="6dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView> 

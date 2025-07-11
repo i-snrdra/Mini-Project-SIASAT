@@ -64,26 +64,34 @@ class LoginActivity : AppCompatActivity() {
                     // Navigasi ke halaman yang sesuai berdasarkan role
                     when (user.role) {
                         "kaprogdi" -> {
-                            // TODO: Navigasi ke halaman kaprogdi
-                            showToast("Login sebagai Kaprogdi: ${user.nama}")
+                            val intent = Intent(this@LoginActivity, KaprogdiDashboardActivity::class.java)
+                            intent.putExtra("USER_ID", user.id)
+                            intent.putExtra("USER_NAME", user.nama)
+                            intent.putExtra("USER_ROLE", user.role)
+                            startActivity(intent)
+                            finish()
                         }
                         "dosen" -> {
                             // TODO: Navigasi ke halaman dosen
                             showToast("Login sebagai Dosen: ${user.nama}")
+                            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                            intent.putExtra("USER_ID", user.id)
+                            intent.putExtra("USER_NAME", user.nama)
+                            intent.putExtra("USER_ROLE", user.role)
+                            startActivity(intent)
+                            finish()
                         }
                         "mahasiswa" -> {
                             // TODO: Navigasi ke halaman mahasiswa
                             showToast("Login sebagai Mahasiswa: ${user.nama}")
+                            val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                            intent.putExtra("USER_ID", user.id)
+                            intent.putExtra("USER_NAME", user.nama)
+                            intent.putExtra("USER_ROLE", user.role)
+                            startActivity(intent)
+                            finish()
                         }
                     }
-                    
-                    // Sementara kembali ke MainActivity untuk demo
-                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                    intent.putExtra("USER_ID", user.id)
-                    intent.putExtra("USER_NAME", user.nama)
-                    intent.putExtra("USER_ROLE", user.role)
-                    startActivity(intent)
-                    finish()
                     
                 } else {
                     // Login gagal
